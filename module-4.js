@@ -413,3 +413,72 @@
 // };
 
 // console.log(pizzaPalace.order("Smoked"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <div>
+//       <p class="taskTitle">ЗАДАЧА 6</p>
+//       <ul class="list">
+//         <li class="listItem">1</li>
+//         <li class="listItem">4</li>
+//         <li class="listItem">8</li>
+//         <li class="listItem">16</li>
+//         <li class="listItem">20</li>
+//         <li class="listItem">30</li>
+//       </ul>
+//       <button id="double">Удвоить</button>
+//     </div>
+// Натиснувши кнопку "Подвоювати", збільшити значення
+// у кожному елементі списку у 2 рази
+
+// const refs = {
+//     ul: document.querySelector('.list'),
+//     li: document.querySelectorAll('.listItem'),
+//     button: document.querySelector('#double'),
+// }
+
+// refs.button.addEventListener('click', onDoubleButton);
+
+// function onDoubleButton() {
+//     refs.li.forEach(item => item.textContent *= 2)
+// }
+
+const refs = {
+    ul: document.querySelector('.list'),
+}
+
+refs.ul.addEventListener('click', onClickDoubleValue);
+
+function onClickDoubleValue(evt) {
+    console.dir(evt.target)
+    if (evt.target.nodeName !== "BUTTON") {
+        return
+    }
+    evt.target.textContent *=2
+}
