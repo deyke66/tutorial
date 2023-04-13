@@ -469,16 +469,18 @@
 //     refs.li.forEach(item => item.textContent *= 2)
 // }
 
-const refs = {
-    ul: document.querySelector('.list'),
-}
+// const refs = {
+//     ul: document.querySelector('.list'),
+// }
 
-refs.ul.addEventListener('click', onClickDoubleValue);
+// refs.ul.addEventListener('click', onClickDoubleValue);
 
-function onClickDoubleValue(evt) {
-    console.dir(evt.target)
-    if (evt.target.nodeName !== "BUTTON") {
-        return
-    }
-    evt.target.textContent *=2
-}
+// function onClickDoubleValue(evt) {
+//     console.dir(evt.target)
+//     if (evt.target.nodeName !== "BUTTON") {
+//         return
+//     }
+//     evt.target.textContent *=2
+// }
+
+
